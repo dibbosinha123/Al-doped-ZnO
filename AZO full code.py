@@ -43,7 +43,10 @@ print("SHAP:", shap.__version__)
 # LOAD DATA
 # ==========================================================
 
-df = pd.read_excel("corrected ##(input).xlsx")
+df = pd.read_csv(
+    "AZO_dataset.csv",
+    encoding="utf-8-sig"
+)
 
 print("Original Shape:", df.shape)
 
